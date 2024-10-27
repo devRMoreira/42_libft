@@ -6,14 +6,12 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:30:46 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/24 19:30:48 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:15:30 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if(!c)
-		return (0);
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	else

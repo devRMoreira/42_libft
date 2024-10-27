@@ -6,14 +6,12 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:16:57 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/24 19:30:54 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:15:39 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if(!c)
-		return (0);
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	else

@@ -6,17 +6,17 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:03:35 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/24 15:30:55 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 15:35:37 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *nptr)
+int	t_atoi(const char *nptr)
 {
-	int i;
-	int neg;
-	long sum;
+	long	sum;
+	int		i;
+	int		neg;
 
 	if (!nptr)
 		return (0);
@@ -25,7 +25,7 @@ int ft_atoi(const char *nptr)
 	sum = 0;
 	while (nptr[i] == 32 || nptr[i] >= 9 && nptr[i] <= 13)
 		i++;
-	if (nptr[i] == '-'|| nptr[i] == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
 			neg = -1;

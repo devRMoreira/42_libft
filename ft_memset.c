@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:08:56 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/24 15:39:15 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 15:48:23 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int	i;
-	char *ptr;
+	char	*ptr;
+	int		i;
 
-	if(!s)
-		return(NULL);
+	if (!s)
+		return (NULL);
 	ptr = s;
 	i = 0;
 	while (i < n)
