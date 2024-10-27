@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:53:57 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:13:56 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:25:12 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	if (!s1 || !s2)
 		return (0);

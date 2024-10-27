@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstrTODO.c                                   :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:26:53 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:14:12 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:25:43 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		if (big[i] == little[j])
 			j++;
 		else if (j == (int) len)
-			return ((char)big[i - j]);
+			return ((char *)big + (i - j));
 		else
 			j = 0;
 		i++;

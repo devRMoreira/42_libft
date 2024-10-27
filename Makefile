@@ -6,14 +6,14 @@
 #    By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/18 15:36:52 by rimagalh          #+#    #+#              #
-#    Updated: 2024/10/24 19:34:03 by rimagalh         ###   ########.fr        #
+#    Updated: 2024/10/27 16:19:26 by rimagalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-NAME = libft
+NAME = libft.a
 
 SRC = ft_atoi.c \
 	ft_bzero.c \

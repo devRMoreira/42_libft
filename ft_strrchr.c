@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:44:03 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:14:19 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 16:25:54 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strrchr(char *str, int c)
 	while (i >= 0)
 	{
 		if (str[i] == c)
-			return (str[i]);
+			return (str + i);
 		i--;
 	}
 	return (NULL);
