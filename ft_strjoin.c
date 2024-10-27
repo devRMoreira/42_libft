@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:11:44 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 18:19:00 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 18:24:56 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (s1[i] != '\0')
-		new[j++] = s1[i++];
+	if (s1)
+		while (s1[i] != '\0')
+			new[j++] = s1[i++];
 	i = 0;
-	while (s2[i] != '\0')
-		new[j++] = s2[i++];
+	if (s2)
+		while (s2[i] != '\0')
+			new[j++] = s2[i++];
 	new[j] = '\0';
 	return (new);
 }
