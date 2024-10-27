@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:39:37 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:24:39 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:37:58 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	if (!s)
 		return (NULL);
 	i = 0;
-	total = (ft_strlen((char *)s) + 1);
+	total = (ft_strlen(s) + 1);
 	str = malloc(sizeof(char) * total);
 	if (!str)
 		return (NULL);

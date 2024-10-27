@@ -6,7 +6,7 @@
 #    By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/18 15:36:52 by rimagalh          #+#    #+#              #
-#    Updated: 2024/10/27 16:19:26 by rimagalh         ###   ########.fr        #
+#    Updated: 2024/10/27 17:31:17 by rimagalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,8 +43,10 @@ SRC = ft_atoi.c \
 
 OBJ = $(SRC:.c=.o)
 
-all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 clean:
 	rm -rf $(OBJ)

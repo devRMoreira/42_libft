@@ -6,11 +6,13 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:11:10 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:13:41 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/27 17:36:51 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
