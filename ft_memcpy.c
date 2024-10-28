@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 17:24:10 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:22:17 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:02:10 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned const char	*src1;
 	size_t				i;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	i = 0;
 	dest1 = dest;

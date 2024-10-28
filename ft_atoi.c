@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:03:35 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 23:04:07 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/28 18:49:04 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,7 @@ int	ft_atoi(const char *nptr)
 	}
 	while (nptr[i] != '\0' && ft_isdigit(nptr[i]))
 	{
-		sum += (nptr[i] - '0');
-		if (ft_isdigit(nptr[i + 1]))
-			sum *= 10;
+		sum = sum * 10 + (nptr[i] - '0');
 		i++;
 	}
 	return (sum * neg);

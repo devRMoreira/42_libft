@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:54:07 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 15:42:17 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/28 18:50:01 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	valid_size(size_t nmemb, size_t size)
 		return (nmemb * size);
 }
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
 	size_t			total;
