@@ -6,7 +6,7 @@
 #    By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/18 15:36:52 by rimagalh          #+#    #+#              #
-#    Updated: 2024/10/29 13:38:08 by rimagalh         ###   ########.fr        #
+#    Updated: 2024/10/29 15:24:15 by rimagalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ SRC = ft_atoi.c \
 	ft_split.c \
 	ft_strchr.c \
 	ft_strdup.c \
+	ft_striteri.c \
 	ft_strjoin.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
