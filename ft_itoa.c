@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:37:54 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/29 13:51:49 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:26:13 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ static int	get_count(int n)
 	int	nums;
 	int	count ;
 
-	count = 0;
-	nums = n;
-	while (!(nums >= 0 && nums <= 9) || !(nums <= 0 && nums >= -9))
+	count = 1;
+	if (n < 0)
+		nums = -n;
+	else
+		nums = n;
+	while (!(nums >= 0 && nums <= 9))
 	{
 		nums /= 10;
 		count++;
@@ -31,30 +34,22 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	int		count;
-	int		i;
 
-	i = 0;
 	count = get_count(n);
-	str = malloc(sizeof(int) * (count + 1));
+	str = malloc(sizeof(char) * (count + 1));
 	if (!str)
 		return (NULL);
+	str[count--] = '\0';
 	if (n < 0)
 	{
-		str[i++] = '-';
-		while (!(n <= 0 && n >= -9))
-		{
-			str[i++] = (n % 10) + '0';
-			n /= 10;
-		}
+		n *= -1;
+		str[count - count] = '-';
 	}
-	else
+	while (!(n >= 0 && n <= 9))
 	{
-		while (!(n >= 0 && n <= 9))
-		{
-			str[i++] = (n % 10) + '0';
-			n /= 10;
-		}
+		str[count--] = (n % 10) + '0';
+		n /= 10;
 	}
-	str[i] = '\0';
+	str[count] = n + '0';
 	return (str);
 }
