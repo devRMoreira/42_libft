@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:35:10 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/29 15:12:54 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:26:38 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		new[i] = f(i, s[i]);
 		i++;
 	}
+	new[i] = '\0';
 	return (new);
 }
