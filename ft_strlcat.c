@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:42:13 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/28 19:31:20 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:44:00 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dstlen;
 	size_t	srclen;
 
-	if (!dst)
-		dstlen = 0;
-	else
-		dstlen = ft_strlen(dst);
+	dstlen = ft_strlen(dst);
 	srclen = ft_strlen(src);
 	i = dstlen;
 	j = 0;

@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:11:10 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 17:36:51 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:27:05 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlen(const char *str)
 	int	i;
 
 	i = 0;
-	if (!str)
-		return (0);
 	while (str[i] != '\0')
 		i++;
 	return (i);

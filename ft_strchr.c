@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:32:26 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/28 19:04:10 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:33:31 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strchr(char *str, int c)
 {
 	int	i;
 
-	if (!str)
-		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 	{

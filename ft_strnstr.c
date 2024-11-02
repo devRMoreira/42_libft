@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:26:53 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/27 16:25:43 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:32:25 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	int	i;
 	int	j;
 
-	if (!big || !little)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (i < (int)len && big[i] != '\0')
