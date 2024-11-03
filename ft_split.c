@@ -6,7 +6,7 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:35:38 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/10/28 16:50:12 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:04:40 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	**ft_split(char const *s, char c)
 	int		j;
 	int		k;
 
-	strs = malloc(sizeof(char) * (count_str(s, c) * 8));
+	strs = malloc(sizeof(char *) * (count_str(s, c) * 8));
 	if (!strs)
 		return (NULL);
 	i = 0;
