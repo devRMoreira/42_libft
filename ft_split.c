@@ -6,55 +6,69 @@
 /*   By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:35:38 by rimagalh          #+#    #+#             */
-/*   Updated: 2024/11/04 12:58:11 by rimagalh         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:21:03 by rimagalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_str(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
-	int	total;
+	int	sep;
+	int	words;
 
 	i = 0;
-	total = 0;
+	sep = 1;
+	words = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c && s[i - 1] != c)
+		if (s[i] != c && sep == 1)
 		{
-			total++;
+			words++;
+			sep = 0;
 		}
+		if (s[i] == c && sep == 0)
+			sep = 1;
 		i++;
 	}
-	total++;
-	return (total);
+	return (words);
+}
+
+static int	ft_memfree(char **s, int q)
+{
+	int	i;
+
+	while (i < q)
+		free(s[i++]);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**strs;
 	int		i;
 	int		j;
 	int		k;
+	char	**arr;
 
-	strs = malloc(sizeof(char *) * (count_str(s, c) * 8));
-	if (!strs)
-		return (NULL);
 	i = 0;
 	j = 0;
 	k = 0;
+	arr = malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!arr)
+		return (ft_memfree(arr, (count_words(s, c) + 1)));
 	while (s[i] != '\0')
 	{
 		if (s[i] == c && s[i - 1] != c)
 		{
-			strs[k] = ft_substr(s, i - j, j);
+			arr[k] = ft_substr(s, i - j, j);
 			k++;
 			j = 0;
 		}
-		j++;
 		i++;
+		j++;
 	}
-	strs[k] = ft_substr(s, i - j, j);
-	return (strs);
+	arr[k++] = ft_substr(s, i - j, j);
+	arr[k][0] = '\0';
+	return (arr);
 }
