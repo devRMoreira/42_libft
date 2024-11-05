@@ -18,7 +18,7 @@ static size_t	valid_size(size_t nmemb, size_t size)
 
 	max_size = (size_t)-1;
 	if (nmemb > (max_size / size))
-		return (1);
+		return (0);
 	else
 		return (nmemb * size);
 }
@@ -29,7 +29,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			total;
 
 	if (!nmemb || !size)
-		total = 1;
+		total = 0;
 	else
 		total = valid_size(nmemb, size);
 	ptr = malloc(total);
