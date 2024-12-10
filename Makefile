@@ -6,7 +6,7 @@
 #    By: rimagalh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/18 15:36:52 by rimagalh          #+#    #+#              #
-#    Updated: 2024/10/29 15:24:15 by rimagalh         ###   ########.fr        #
+#    Updated: 2024/12/10 15:54:31 by rimagalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ NAME = libft.a
 SRC = ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
+	ft_get_next_line.c \
     ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
@@ -29,9 +30,16 @@ SRC = ft_atoi.c \
 	ft_memcpy.c \
 	ft_memmove.c \
 	ft_memset.c \
+	ft_printf_input_utils.c \
+	ft_printf_input.c \
+	ft_printf_output_utils.c \
+	ft_printf_output.c \
+	ft_printf.c \
 	ft_putchar_fd.c \
 	ft_putendl_fd.c \
+	ft_putnbr_base.c \
 	ft_putnbr_fd.c \
+	ft_putnbr_unsigned_base.c \
 	ft_putstr_fd.c \
 	ft_split.c \
 	ft_strchr.c \
